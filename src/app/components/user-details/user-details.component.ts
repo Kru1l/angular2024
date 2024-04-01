@@ -10,6 +10,7 @@ import {IUser} from "../../interfaces/user.interface";
   styleUrl: './user-details.component.css'
 })
 export class UserDetailsComponent {
+
   @Input()
   userDetails: IUser
 
