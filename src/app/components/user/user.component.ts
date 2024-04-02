@@ -13,14 +13,13 @@ import {NgIf} from "@angular/common";
 })
 
 export class UserComponent {
-
   @Input()
   user: IUser;
 
   @Output()
-  lift = new EventEmitter<IUser>();
+  userId = new EventEmitter<number>();
 
-  getDetails(): void {
-    this.lift.emit(this.user);
+  getPosts(): void {
+    this.userId.emit(this.user.id);
   }
 }
