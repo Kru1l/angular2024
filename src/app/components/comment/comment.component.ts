@@ -9,7 +9,6 @@ import {IComment} from "../../../interfaces";
   styleUrl: './comment.component.css'
 })
 export class CommentComponent {
-
   @Input()
   comment: IComment;
 
